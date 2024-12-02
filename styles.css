@@ -1,0 +1,291 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'League Spartan', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header Styling */
+header {
+  background-color: #0056b3; /* Varsity Blue */
+  padding: 20px 0;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: 0 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #F4D03F; /* Varsity Yellow */
+}
+
+.hero-header {
+  font-family: 'League Spartan', sans-serif; 
+  font-size: 5rem;
+  font-weight: bold;
+  color: #F4D03F; /* Varsity Yellow */
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+/* Hero Section Styling */
+.hero {
+  position: relative;
+  background-image: url('https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');
+  background-size: cover;
+  background-position: center;
+  padding: 120px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero .btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hero .btn {
+  background-color: #0056b3; /* Varsity Blue */
+  color: #fff;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 1.2rem;
+  padding: 15px 40px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 2px solid #F4D03F; /* Varsity Yellow */
+  transition: all 0.3s ease;
+}
+
+.hero .btn:hover {
+  background-color: #F4D03F; /* Varsity Yellow */
+  color: #0056b3; /* Varsity Blue */
+  border-color: #0056b3;
+}
+
+/* About Section Styling */
+.about {
+  background-color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+  font-family: 'League Spartan', sans-serif;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #0056b3; /* Varsity Blue */
+  margin-bottom: 30px;
+}
+
+.about p {
+  font-size: 1.2rem;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Menu Section Styling */
+.menu {
+  background-color: #333;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  background-image: url('https://images.unsplash.com/photo-1511637481422-070a418ed3a2'); /* Chalkboard texture */
+  background-size: cover;
+  background-position: center;
+}
+
+.menu h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #F4D03F; /* Varsity Yellow */
+  margin-bottom: 40px;
+}
+
+.menu .menu-section {
+  margin-bottom: 50px;
+}
+
+.menu .menu-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.menu .menu-item {
+  background-color: rgba(0, 0, 0, 0.7); /* Chalkboard effect */
+  padding: 20px;
+  border: 2px solid #F4D03F;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.menu .menu-item:hover {
+  transform: translateY(-10px);
+}
+
+.menu h3 {
+  font-size: 1.5rem;
+  color: #F4D03F; /* Varsity Yellow */
+}
+
+.menu p {
+  font-size: 1.2rem;
+}
+
+/* Pizza Section Styling */
+.pizza {
+  background-color: #F4D03F; /* Varsity Yellow */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.pizza h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #0056b3; /* Varsity Blue */
+}
+
+.pizza a {
+  background-color: #0056b3;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 15px 40px;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.pizza a:hover {
+  background-color: #F4D03F; /* Varsity Yellow */
+  color: #0056b3;
+}
+
+/* Contact Section Styling */
+.contact {
+  background-color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+  font-family: 'League Spartan', sans-serif;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #0056b3; /* Varsity Blue */
+  margin-bottom: 40px;
+}
+
+.contact ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.contact li {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.contact p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #0056b3; /* Varsity Blue */
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 3rem;
+  }
+
+  .hero .btn-container {
+    flex-direction: column;
+  }
+
+  .hero .btn {
+    font-size: 1rem;
+    padding: 10px 30px;
+  }
+
+  .menu .menu-item {
+    padding: 15px;
+  }
+
+  .about h2,
+  .menu h2,
+  .pizza h2,
+  .contact h2 {
+    font-size: 2rem;
+  }
+
+  .pizza a {
+    font-size: 1rem;
+    padding: 12px 30px;
+  }
+
+  .contact li {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h2 {
+    font-size: 2.5rem;
+  }
+
+  .hero .btn {
+    font-size: 1rem;
+    padding: 10px 25px;
+  }
+
+  .pizza a {
+    font-size: 1rem;
+    padding: 10px 25px;
+  }
+
+  .contact li {
+    font-size: 0.9rem;
+  }
+}
